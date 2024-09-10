@@ -1,0 +1,135 @@
+/* General body and HTML styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Changed to column for vertical stacking */
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/giphy.gif'); /* Add your image URL here */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; /* Minimal padding for smaller header */
+    background-color: #ff5500ad; /* Bright blue background */
+    color: white;
+    font-size: 24px;
+}
+
+
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; /* Similar minimal padding */
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    font-size: 16px;
+}
+
+/* Additional styles to ensure functionality */
+.chat-title, .chat-content, .text-form {
+    padding: 10px; /* Ensures padding inside components */
+}
+
+.chat-title {
+    background-color: #800000; /* Sets a blue background */
+    color: white;              /* Sets text color to white */
+                /* Adds some padding inside the header */
+    text-align: center;        /* Centers the heading text */
+}
+.chat-body {
+    width: 40%; /* Set the width of the chat body */
+    min-width: 600px; /* Maximum width can be adjusted as needed */
+    height: 80%; /* Set the height of the chat body */
+    max-height: 800px; /* Maximum height can be adjusted as needed */
+    display: flex;
+    flex-direction: column;
+    background: white; /* Background color of the chat area */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for better visibility */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* .inner-body {
+    background-color: rgba(226, 226, 226, 0.1);
+    width: 100%;
+    height: 100%;
+} */
+
+.chat-content {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background-color: #000000;
+ 
+}
+
+.text-form {
+    display: flex;
+    padding: 10px;
+    background-color: #800000;
+    border-top: 1px solid #ccc;
+    flex-direction: column;
+}
+
+.text-form input[type="text"] {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.text-form button {
+    width: 100%; /* Optional: Makes the button take full width */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.text-form button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(226, 226, 226, 0.1);
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.bot-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: auto; /* Align to left */
+    
+}
+
+.user-message {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto; /* Align to right */
+}
